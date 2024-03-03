@@ -1,5 +1,6 @@
 ﻿
 
+using System.Collections;
 using System.Text.RegularExpressions;
 using ProgLangQuizGame;
 
@@ -8,20 +9,45 @@ public class gameOne
     public static void Main(string[]args)
     {
         Console.WriteLine("Hello, World!");
-        string n = Console.ReadLine();
+        int n = int.Parse(Console.ReadLine());
+        int ans = 0;
 
-        Console.WriteLine(n);
+
+        string[,]questions = new string[,]
+        {
+            {"1. It is an event that occurs during the execution of a program that disrupts the normal flow of instructions ? ",
+                "a. Exception     b. Extends     c. Inheritance",}
+
+
+
+        };
+        string[] answers = new string []
+        {
+
+        };
+
+
+
+        int a = 0;
+        int c = 0; // correct
+        int w = 0; // wrong
+
+        do
+        {
+            Console.WriteLine(questions[a,0] + questions[a,1]);
+
+        }
+        while (a < 10);
+        {
+
+            Console.WriteLine("ans");
+
+        }
+
         try
         {
-            if (string.IsNullOrEmpty(n))
-            {
-
-            }
-            else
-            {
-               
-            }
-
+          
+           
 
         }
         catch (NumberFormat e)
