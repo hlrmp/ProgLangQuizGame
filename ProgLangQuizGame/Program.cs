@@ -166,6 +166,7 @@ public class gameOne
             catch (Exception e)
             {
                 Console.WriteLine("Error " + e.Message);
+                Console.WriteLine("                               ");
 
                 Console.BackgroundColor = ConsoleColor.Red;
                 Console.ForegroundColor = ConsoleColor.Black;
